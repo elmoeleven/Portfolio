@@ -1,0 +1,60 @@
+@import 'nib'
+@import '_base'
+
+html
+  font-size 62.5%
+
+body
+  text-rendering optimizeLegibility
+  font-size 10px
+  font-size 1.8rem
+  ff(paragraphFont, normal, 400)
+  color black
+  text-align center
+
+h1, h2, h3, h4, h5, h6
+  ff(headingFont, normal, 400)
+  ts(0px,0px,1px,black)
+
+p + p
+  text-indent 20px
+  text-indent 2rem
+
+q
+  quotes '“' '”' '‘' '’'
+  font-style italic
+
+  &:before
+    content '“'
+    content open-quote
+  &:after
+    content '”'
+    content close-quote
+
+a.bodylink
+  color black
+
+a.hlink, a.hlink i
+    text-decoration none
+
+a.bodylink, a.hlink, a.hlink i
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+h1, h2
+  font-size 30px
+  font-size 3rem
+
+h3
+  font-size 25px
+  font-size 2.5rem
+
+#site-container
+  width 100%
+  max-width 960px
+  min-width 220px
+  margin auto
+  overflow hidden
